@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversion Calculator</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/syle.css" />
+  </head>
+
+  <body>
+    <div class="container-box">
+        <h2>Unit Converter <span><i class="fa-solid fa-ruler"></i> <span></h2>
+
+      <div class="box">
+        <form action="#" method="#">
+
+          <div class="left-box">
+            <p class="text">From:</p>
+            <input type="number" placeholder="Input" id="input" />
+
+            <select onchange="StartConvert()" id="inputUnit" required>
+                <option selected disabled>Select unit</option>
+              <option value="Meter">Meter</option>
+              <option value="Kilometer">Kilometer</option>
+              <option value="Centimeter">Centimeter</option>
+              <option value="Millimeter">Millimeter</option>
+              <option value="Yard">Yard</option>
+              <option value="Foot">Foot</option>
+              <option value="Inch">Inch</option>
+              <option value="Mile">Mile</option>
+            </select>
+          </div>
+
+        <div class="right-box">
+            <p class="text">To:</p>
+            <input type="number" placeholder="" id="result" disabled />
+
+            <select onchange="StartConvert()" id="resultUnit" required>
+                <option selected disabled>Select unit</option>
+              <option value="Meter">Meter</option>
+              <option value="Kilometer">Kilometer</option>
+              <option value="Centimeter">Centimeter</option>
+              <option value="Millimeter">Millimeter</option>
+              <option value="Yard">Yard</option>
+              <option value="Foot">Foot</option>
+              <option value="Inch">Inch</option>
+              <option value="Mile">Mile</option>
+            </select>
+        </div>
+    </div>
+
+          <button class="btn" onClick="resetForm()">Reset</button>
+        </form>
+  </div>
+   
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

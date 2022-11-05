@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+   
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(to right, #3c8b66, #30d6a4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.container-box {
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    border-radius: 20px;
+
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    color: rgb(4, 134, 63);
+    font-size: 40px;
+    
+}
+
+.box {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    flex-direction: row;
+
+}
+
+.left-box {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.right-box {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+
+}
+
+
+.btn{
+    width: 98%;
+    height: 40px;
+    box-shadow: 0 4px 4px 0  rgba(32, 138, 55, 0.75); 
+    background: linear-gradient(to bottom, #4da884, #28a78e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+    margin-left: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    margin: .5em 0;
+    
+  }
+
+  .btn:hover,
+.btn:focus {
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );  
+    border-color: var(--color-brand);
+    color: rgb(252, 252, 252);
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 1.2em;
+
+}
+
+select{
+    width: 100%;
+    height: 40px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background: hwb(109 80% 7%);
+    outline: none;
+    color: black;
+    margin: 0.3em 0;
+    padding: 0 1em;
+    border-radius: 10px;
+    border: none;
+
+  }
+
+  input{
+    height: 40px;
+    font-size: 1em;
+    margin: 0.3em 0;
+    border-radius: 10px;
+    border: none;
+    background: #eaf8ec;
+    outline: none;
+    padding: 0 1em;
+
+  }
+  
+
+@media screen and (max-width: 568px) {
+
+    *{
+        font-size: small;
+    }
+
+    h2{
+        font-size: 1.6em;
+        
+    }
+
+    .container-box {
+        min-width: 70vw;
+        flex-wrap: wrap;
+    }
+
+
+    .btn {
+        padding: 6px 14px;
+        font-size: smaller;
+    }
+
+}
